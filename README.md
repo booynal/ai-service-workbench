@@ -41,6 +41,10 @@
 
 `tools/issue_to_proposal_and_comment.sh`
 
+批量处理 open leads 脚本：
+
+`tools/process_open_leads.sh`
+
 用法：
 
 ```bash
@@ -93,6 +97,12 @@ python3 tools/issue_to_brief.py path/to/issue.md report_assets/imported_brief.md
 
 ```bash
 ./tools/issue_to_proposal_and_comment.sh 123 output_dir
+```
+
+如果希望批量扫描公开仓库中还没发送 proposal 的 open leads：
+
+```bash
+./tools/process_open_leads.sh output_root_dir
 ```
 
 这条自动回帖链路也已经完成一次真实 GitHub issue 验证：

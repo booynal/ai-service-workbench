@@ -86,6 +86,18 @@ python3 tools/issue_to_brief.py tmp_issue.md report_assets/imported_brief.md
 
 `issue #3 -> report_assets/live_label_run/ -> issue comment + label proposal-sent`
 
+## 如果希望批量处理 open leads
+
+```bash
+./tools/process_open_leads.sh output_root_dir
+```
+
+当前逻辑：
+
+1. 拉取公开仓库里的 open issues
+2. 跳过已经有 `proposal-sent` 的项目
+3. 对剩余 issue 执行自动提案和回帖流程
+
 输出目录中会得到：
 
 1. `issue.md`

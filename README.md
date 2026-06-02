@@ -192,6 +192,7 @@ DRY_RUN=1 ./tools/remove_lead_engine.sh
 10. 公开案例页：`docs/examples.md`
 11. 报告型案例：`report_assets/report_service_proposal.md`
 12. 工作流型案例：`report_assets/workflow_service_proposal.md`
+13. 报价估算页：`docs/quote-estimator.html`
 
 ## 推荐你下一步怎么用
 

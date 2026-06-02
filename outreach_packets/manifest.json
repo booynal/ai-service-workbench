@@ -10,5 +10,17 @@
     "message": "outreach_packets/agile-issue-10-message.txt",
     "proposal": "outreach_packets/agile-issue-10-proposal.md",
     "priority": "secondary"
+  },
+  "wechat-group": {
+    "target_url": "wechat-group",
+    "message": "cn_outreach_packets/微信群首发短文案.txt",
+    "proposal": "",
+    "priority": "highest"
+  },
+  "dm-direct": {
+    "target_url": "direct-message",
+    "message": "cn_outreach_packets/一对一私聊首发.txt",
+    "proposal": "",
+    "priority": "highest"
   }
 }

@@ -24,6 +24,14 @@
 17. 中文外联包说明：`中文外联包-说明.md`
 18. 触达记录追加工具：`tools/log_outreach_entry.py`
 
+示例：
+
+```bash
+python3 tools/prepare_outreach_packet.py csa-issue-2
+python3 tools/prepare_outreach_packet.py wechat-group
+python3 tools/prepare_outreach_packet.py dm-direct
+```
+
 ## 已验证可用的本地能力
 
 1. 本机 `codex` 已登录，可非交互执行

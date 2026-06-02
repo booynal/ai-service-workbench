@@ -26,7 +26,8 @@ def main(argv: list[str]) -> int:
     print(f"Priority: {item['priority']}")
     print(f"Target URL: {item['target_url']}")
     print(f"Message file: {item['message']}")
-    print(f"Proposal file: {item['proposal']}")
+    if item.get("proposal"):
+        print(f"Proposal file: {item['proposal']}")
     return 0
 
 

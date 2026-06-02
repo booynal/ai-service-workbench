@@ -29,6 +29,17 @@ def main() -> int:
     require("outreach_packets/csa-issue-2-proposal.md" in text, "output should include proposal path")
     require("https://github.com/faisalabdullah-commits/csa/issues/2" in text, "output should include target URL")
 
+    proc_cn = subprocess.run(
+        ["python3", str(SCRIPT), "wechat-group"],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+    )
+    require(proc_cn.returncode == 0, f"prepare_outreach_packet for chinese packet failed: {proc_cn.stderr or proc_cn.stdout}")
+    text_cn = proc_cn.stdout
+    require("wechat-group" in text_cn, "output should include chinese packet key")
+    require("cn_outreach_packets/微信群首发短文案.txt" in text_cn, "output should include chinese message path")
+
     return 0
 
 

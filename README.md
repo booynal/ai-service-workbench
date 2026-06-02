@@ -35,8 +35,9 @@
 29. 下一条触达建议器：`tools/next_outreach.py`
 30. 一键开始今日触达：`tools/start_today.py`
 31. 今日动作打印器：`tools/today_actions.py`
-31. 发前检查：`tools/preflight_check.py`
-32. GitHub 外联发送器（默认预览）：`tools/send_github_outreach.py`
+32. 发前检查：`tools/preflight_check.py`
+33. GitHub 外联发送器（默认预览）：`tools/send_github_outreach.py`
+34. 一键开干：`tools/go_now.py`
 
 示例：
 

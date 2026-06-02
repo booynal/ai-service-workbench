@@ -44,6 +44,12 @@ def main(argv: list[str]) -> int:
         print(f"Asset: {row.get('asset_used')}")
         print(f"Next action: {row.get('next_action')}")
         print(f"Notes: {row.get('notes')}")
+        if row.get("channel") == "wechat" and "群" in row.get("asset_used", ""):
+            print("Runbook: runbooks/wechat-group.md")
+        elif row.get("channel") == "wechat":
+            print("Runbook: runbooks/dm-direct.md")
+        elif row.get("target") == "csa issue #2":
+            print("Runbook: runbooks/csa-issue-2.md")
         return 0
 
     print("No remaining outreach targets in plan.")

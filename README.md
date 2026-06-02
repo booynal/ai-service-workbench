@@ -10,6 +10,9 @@
 4. 首周动作：`首周落地清单.md`
 5. 客户需求模板：`client_brief_template.md`
 6. 渠道执行矩阵：`渠道执行矩阵-2026-06-03.md`
+7. Fiverr Gig 草稿：`Fiverr-Gig-草稿.md`
+8. Upwork Profile 与 Proposal 草稿：`Upwork-Profile-和-Proposal-草稿.md`
+9. 英文外联模板：`英文外联模板.md`
 
 ## 已验证可用的本地能力
 

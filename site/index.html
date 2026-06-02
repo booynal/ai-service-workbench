@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI 代做服务工作台</title>
+  <meta name="description" content="自动化脚本代做、资料整理成报告、AI 工作流搭建。">
+  <style>
+    :root {
+      --bg: #f4f0e8;
+      --paper: #fffaf2;
+      --ink: #182126;
+      --muted: #5f6a6e;
+      --line: #d9cfbd;
+      --accent: #0e7a6d;
+      --accent-2: #d45b35;
+      --card: #f8f4eb;
+      --shadow: 0 20px 60px rgba(24, 33, 38, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Noto Serif SC", "Songti SC", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(212, 91, 53, 0.10), transparent 28%),
+        radial-gradient(circle at top right, rgba(14, 122, 109, 0.10), transparent 24%),
+        linear-gradient(180deg, #f7f1e7 0%, #f1ebe0 100%);
+    }
+
+    a { color: inherit; }
+    .wrap {
+      width: min(1120px, calc(100vw - 32px));
+      margin: 0 auto;
+      padding: 32px 0 72px;
+    }
+
+    .hero {
+      background: rgba(255, 250, 242, 0.8);
+      border: 1px solid rgba(217, 207, 189, 0.8);
+      box-shadow: var(--shadow);
+      border-radius: 28px;
+      padding: 28px;
+      backdrop-filter: blur(8px);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(14, 122, 109, 0.10);
+      color: var(--accent);
+      font-size: 13px;
+      letter-spacing: 0.06em;
+    }
+
+    h1 {
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 6vw, 68px);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+    }
+
+    .lead {
+      margin: 0;
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 15px;
+      border: 1px solid var(--ink);
+    }
+
+    .btn.primary {
+      background: var(--ink);
+      color: #f7f1e7;
+      border-color: var(--ink);
+    }
+
+    .btn.alt {
+      background: transparent;
+      color: var(--ink);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    .card {
+      background: rgba(255, 250, 242, 0.88);
+      border: 1px solid rgba(217, 207, 189, 0.86);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      padding: 22px;
+    }
+
+    .span-4 { grid-column: span 4; }
+    .span-6 { grid-column: span 6; }
+    .span-8 { grid-column: span 8; }
+    .span-12 { grid-column: span 12; }
+
+    h2, h3 {
+      margin: 0 0 14px;
+      line-height: 1.1;
+    }
+
+    h2 { font-size: 28px; }
+    h3 { font-size: 22px; }
+
+    p, li {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .price {
+      font-size: 34px;
+      color: var(--ink);
+      margin: 6px 0 12px;
+    }
+
+    .label {
+      color: var(--accent-2);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+    }
+
+    .quote {
+      padding: 18px;
+      border-left: 4px solid var(--accent-2);
+      background: rgba(212, 91, 53, 0.06);
+      border-radius: 18px;
+      color: var(--ink);
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .step {
+      padding: 18px;
+      border-radius: 20px;
+      background: var(--card);
+      border: 1px solid var(--line);
+    }
+
+    .step strong {
+      display: block;
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+
+    footer {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .span-4, .span-6, .span-8 { grid-column: span 12; }
+      .steps { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <span class="eyebrow">AI 代做服务 / 本地智能体交付</span>
+      <h1>先卖结果，<br>再把结果产品化。</h1>
+      <p class="lead">
+        当前这套工作台主打三类服务：自动化脚本代做、资料整理成报告、AI 工作流搭建。
+        目标不是展示“我会 AI”，而是更快把客户的重复活、乱资料和临时需求做成可交付结果。
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="../report_assets/sample_proposal.md">查看提案样例</a>
+        <a class="btn alt" href="../服务套餐清单.md">查看服务套餐</a>
+        <a class="btn alt" href="../client_brief_template.md">查看客户需求模板</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card span-4">
+        <div class="label">服务 01</div>
+        <h3>自动化脚本代做</h3>
+        <p>把文件整理、CSV 清洗、批量改名、网页资料提取这类重复操作做成可运行脚本。</p>
+        <div class="price">699+</div>
+        <p>适合每天反复做同一件电脑活的人。</p>
+      </article>
+
+      <article class="card span-4">
+        <div class="label">服务 02</div>
+        <h3>资料整理成报告</h3>
+        <p>把纪要、网页、文档、笔记整理成结构化摘要、行动清单和可复用报告。</p>
+        <div class="price">299+</div>
+        <p>适合销售、运营、创业者、小团队负责人。</p>
+      </article>
+
+      <article class="card span-4">
+        <div class="label">服务 03</div>
+        <h3>AI 工作流搭建</h3>
+        <p>把提案、答疑、整理、归纳这类脑力活做成半自动流程，减少重复劳动。</p>
+        <div class="price">999+</div>
+        <p>适合已经有稳定重复需求的人。</p>
+      </article>
+
+      <article class="card span-8">
+        <h2>为什么这条路更现实</h2>
+        <ul>
+          <li>不需要先做完整产品，也不需要先拿流量。</li>
+          <li>用现成智能体把交付速度拉高，先挣到第一笔服务费。</li>
+          <li>拿到真实客户后，再把高频交付沉淀成模板和产品。</li>
+        </ul>
+      </article>
+
+      <article class="card span-4">
+        <h2>当前最重要的目标</h2>
+        <div class="quote">
+          第一目标不是月入多少，而是形成一套能持续接单、持续复用、持续涨价的交付方式。
+        </div>
+      </article>
+
+      <article class="card span-12">
+        <h2>客户从需求到交付的流程</h2>
+        <div class="steps">
+          <div class="step">
+            <strong>01</strong>
+            <p>客户给原始需求或一堆资料。</p>
+          </div>
+          <div class="step">
+            <strong>02</strong>
+            <p>用本地提案工具快速生成方案、边界和报价。</p>
+          </div>
+          <div class="step">
+            <strong>03</strong>
+            <p>用智能体和脚本完成第一版交付物。</p>
+          </div>
+          <div class="step">
+            <strong>04</strong>
+            <p>收反馈，沉淀模板，缩短下次交付时间。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card span-6">
+        <h2>已经验证的东西</h2>
+        <ul>
+          <li>本机 `codex` 已登录并可非交互执行。</li>
+          <li>本机 `claude` 已登录。</li>
+          <li>已生成真实提案样例，说明“需求到提案”的链路已跑通。</li>
+        </ul>
+      </article>
+
+      <article class="card span-6">
+        <h2>下一步最值钱的动作</h2>
+        <ul>
+          <li>把真实需求喂给提案工具，持续积累案例。</li>
+          <li>把最常见的三个项目做成标准报价。</li>
+          <li>把最常成交的一类需求做成固定交付模版。</li>
+        </ul>
+      </article>
+    </section>
+
+    <footer>
+      当前目录已包含：报告、套餐、渠道文案、客户需求模板、提案生成脚本与样例提案。
+    </footer>
+  </main>
+</body>
+</html>

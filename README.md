@@ -38,6 +38,7 @@
 32. 发前检查：`tools/preflight_check.py`
 33. GitHub 外联发送器（默认预览）：`tools/send_github_outreach.py`
 34. 一键复制首发文案：`tools/copy_outreach_text.py`
+35. 一键开干：`tools/go_now.py`
 34. 一键开干：`tools/go_now.py`
 
 示例：

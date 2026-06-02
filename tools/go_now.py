@@ -10,11 +10,17 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def main(argv: list[str]) -> int:
-    if len(argv) != 2:
-        print(f"Usage: {argv[0]} <output-runbook-file>", file=sys.stderr)
+    if len(argv) not in (2, 4):
+        print(f"Usage: {argv[0]} <output-runbook-file> [--pbcopy-cmd <command>]", file=sys.stderr)
         return 1
 
     output_file = Path(argv[1])
+    pbcopy_cmd = None
+    if len(argv) == 4:
+        if argv[2] != "--pbcopy-cmd":
+            print("Unknown option", file=sys.stderr)
+            return 1
+        pbcopy_cmd = argv[3]
 
     preflight = subprocess.run(
         ["python3", str(ROOT / "tools" / "preflight_check.py")],
@@ -44,6 +50,18 @@ def main(argv: list[str]) -> int:
         check=True,
     )
     print(start.stdout.strip())
+
+    copy_cmd = ["python3", str(ROOT / "tools" / "copy_outreach_text.py"), "wechat-group"]
+    if pbcopy_cmd is not None:
+        copy_cmd.extend(["--pbcopy-cmd", pbcopy_cmd])
+    copy = subprocess.run(
+        copy_cmd,
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+    print(copy.stdout.strip())
     return 0
 
 

@@ -16,15 +16,16 @@
 10. 主动外联候选清单：`主动外联候选清单-2026-06-03.md`
 11. 定制英文外联草稿：`定制英文外联草稿-2026-06-03.md`
 12. 真实机会雷达：`真实机会雷达-2026-06-03.md`
-12. 外联消息生成器：`tools/generate_outreach_message.py`
-12. 明日首发执行单：`明日首发执行单-2026-06-03.md`
-13. 触达记录模板：`触达记录模板.csv`
-14. 现成外联包目录：`outreach_packets/`
-15. 外联包索引器：`tools/prepare_outreach_packet.py`
-16. 外联回复分支模板：`外联回复分支模板-英文.md`
-17. 中文外联包说明：`中文外联包-说明.md`
-18. 触达记录追加工具：`tools/log_outreach_entry.py`
-19. 外联 runbook 渲染器：`tools/render_outreach_runbook.py`
+13. 外联消息生成器：`tools/generate_outreach_message.py`
+14. 明日首发执行单：`明日首发执行单-2026-06-03.md`
+15. 触达计划：`触达计划.csv`
+16. 触达日志模板：`触达日志模板.csv`
+17. 现成外联包目录：`outreach_packets/`
+18. 外联包索引器：`tools/prepare_outreach_packet.py`
+19. 外联回复分支模板：`外联回复分支模板-英文.md`
+20. 中文外联包说明：`中文外联包-说明.md`
+21. 触达记录追加工具：`tools/log_outreach_entry.py`
+22. 外联 runbook 渲染器：`tools/render_outreach_runbook.py`
 
 示例：
 

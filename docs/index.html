@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Service Workbench</title>
+  <meta name="description" content="Automation scripts, document-to-report delivery, and AI workflow setup.">
+  <style>
+    :root {
+      --bg: #f4f0e8;
+      --paper: #fffaf2;
+      --ink: #182126;
+      --muted: #5f6a6e;
+      --line: #d9cfbd;
+      --accent: #0e7a6d;
+      --accent-2: #d45b35;
+      --card: #f8f4eb;
+      --shadow: 0 20px 60px rgba(24, 33, 38, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Noto Serif SC", "Songti SC", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(212, 91, 53, 0.10), transparent 28%),
+        radial-gradient(circle at top right, rgba(14, 122, 109, 0.10), transparent 24%),
+        linear-gradient(180deg, #f7f1e7 0%, #f1ebe0 100%);
+    }
+    a { color: inherit; }
+    .wrap {
+      width: min(1120px, calc(100vw - 32px));
+      margin: 0 auto;
+      padding: 32px 0 72px;
+    }
+    .hero, .card {
+      background: rgba(255, 250, 242, 0.88);
+      border: 1px solid rgba(217, 207, 189, 0.86);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+    .hero { padding: 28px; }
+    .eyebrow {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(14, 122, 109, 0.10);
+      color: var(--accent);
+      font-size: 13px;
+      letter-spacing: 0.06em;
+    }
+    h1 {
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 6vw, 68px);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+    }
+    .lead {
+      margin: 0;
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.7;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 15px;
+      border: 1px solid var(--ink);
+    }
+    .btn.primary {
+      background: var(--ink);
+      color: #f7f1e7;
+      border-color: var(--ink);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 18px;
+      margin-top: 22px;
+    }
+    .card { padding: 22px; }
+    .span-4 { grid-column: span 4; }
+    .span-6 { grid-column: span 6; }
+    .span-8 { grid-column: span 8; }
+    .span-12 { grid-column: span 12; }
+    h2, h3 { margin: 0 0 14px; line-height: 1.1; }
+    h2 { font-size: 28px; }
+    h3 { font-size: 22px; }
+    p, li { color: var(--muted); font-size: 16px; line-height: 1.75; }
+    ul { margin: 0; padding-left: 20px; }
+    .price { font-size: 34px; color: var(--ink); margin: 6px 0 12px; }
+    .label {
+      color: var(--accent-2);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+    }
+    .quote {
+      padding: 18px;
+      border-left: 4px solid var(--accent-2);
+      background: rgba(212, 91, 53, 0.06);
+      border-radius: 18px;
+      color: var(--ink);
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+    .step {
+      padding: 18px;
+      border-radius: 20px;
+      background: var(--card);
+      border: 1px solid var(--line);
+    }
+    .step strong {
+      display: block;
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+    footer { margin-top: 24px; color: var(--muted); font-size: 14px; }
+    @media (max-width: 900px) {
+      .span-4, .span-6, .span-8 { grid-column: span 12; }
+      .steps { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <span class="eyebrow">AI delivery / local agent workflow</span>
+      <h1>Sell outcomes first.<br>Productize later.</h1>
+      <p class="lead">
+        This workbench focuses on three services: automation scripts, document-to-report delivery,
+        and lightweight AI workflow setup. The goal is simple: turn messy, repetitive work into fast deliverables.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="./sample_proposal.md">Sample proposal</a>
+        <a class="btn" href="./services.md">Service packages</a>
+        <a class="btn" href="./client_brief_template.md">Client brief template</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card span-4">
+        <div class="label">Service 01</div>
+        <h3>Automation Scripts</h3>
+        <p>Turn repetitive file, CSV, rename, and extraction work into runnable scripts.</p>
+        <div class="price">699+</div>
+        <p>Best for people who repeat the same computer task every day.</p>
+      </article>
+
+      <article class="card span-4">
+        <div class="label">Service 02</div>
+        <h3>Reports from Messy Inputs</h3>
+        <p>Convert meeting notes, webpages, docs, and raw text into structured reports and action lists.</p>
+        <div class="price">299+</div>
+        <p>Useful for sales, ops, founders, and small teams.</p>
+      </article>
+
+      <article class="card span-4">
+        <div class="label">Service 03</div>
+        <h3>AI Workflow Setup</h3>
+        <p>Build lightweight flows for proposals, internal Q&amp;A, summaries, and repeatable knowledge work.</p>
+        <div class="price">999+</div>
+        <p>Best once a repeated need already exists.</p>
+      </article>
+
+      <article class="card span-8">
+        <h2>Why this route is practical</h2>
+        <ul>
+          <li>No need to start with a full product.</li>
+          <li>Use existing agent tools to deliver faster and close the first paid job.</li>
+          <li>Only after repeated demand appears, convert the work into templates or products.</li>
+        </ul>
+      </article>
+
+      <article class="card span-4">
+        <h2>Primary objective</h2>
+        <div class="quote">
+          The first target is not a vanity revenue number. It is a repeatable delivery loop that can win jobs and improve over time.
+        </div>
+      </article>
+
+      <article class="card span-12">
+        <h2>Client flow</h2>
+        <div class="steps">
+          <div class="step">
+            <strong>01</strong>
+            <p>Receive a raw request, files, or messy notes.</p>
+          </div>
+          <div class="step">
+            <strong>02</strong>
+            <p>Generate a scoped proposal with deliverables, risks, and pricing.</p>
+          </div>
+          <div class="step">
+            <strong>03</strong>
+            <p>Use local agents and scripts to produce the first deliverable.</p>
+          </div>
+          <div class="step">
+            <strong>04</strong>
+            <p>Collect feedback and turn repeated work into reusable templates.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      Public repo: <a href="https://github.com/booynal/ai-service-workbench">github.com/booynal/ai-service-workbench</a>
+    </footer>
+  </main>
+</body>
+</html>

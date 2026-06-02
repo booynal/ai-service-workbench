@@ -1,3 +1,4 @@
 date,channel,target,asset_used,status,next_action,notes
 2026-06-03,github,csa issue #2,"outreach_packets/csa-issue-2-message.txt; outreach_packets/csa-issue-2-proposal.md",drafted,send short probe first,highest-priority outbound candidate
 2026-06-03,github,agile-final-project issue #10,"outreach_packets/agile-issue-10-message.txt; outreach_packets/agile-issue-10-proposal.md",drafted,hold unless csa test is done,good training sample but lower confidence
+2026-06-03,github,csa issue #2,outreach_packets/csa-issue-2-message.txt,sent,wait 48h,manual demo append

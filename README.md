@@ -21,6 +21,8 @@
 14. 现成外联包目录：`outreach_packets/`
 15. 外联包索引器：`tools/prepare_outreach_packet.py`
 16. 外联回复分支模板：`外联回复分支模板-英文.md`
+17. 中文外联包说明：`中文外联包-说明.md`
+18. 触达记录追加工具：`tools/log_outreach_entry.py`
 
 ## 已验证可用的本地能力
 

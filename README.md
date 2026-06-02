@@ -31,6 +31,7 @@
 25. 外联 runbook 渲染器：`tools/render_outreach_runbook.py`
 26. 微信分享素材：`share_assets/zh-landing-qr.png`、`share_assets/wechat-share-card.png`
 27. 中文落地页：`docs/zh.html`
+28. 下一条触达建议器：`tools/next_outreach.py`
 
 示例：
 

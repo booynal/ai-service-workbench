@@ -55,6 +55,20 @@
 4. 用 `tools/proposal_lab.sh` 生成提案
 5. 按反馈继续迭代模板和报价
 
+## 当前网络环境下的 GitHub 发布说明
+
+在这台机器当前网络条件下，`git remote-https` 直连 `github.com:443` 会超时，单靠系统代理不稳定。  
+实际验证可用的方式是给 Git 命令显式带上代理环境变量：
+
+```bash
+HTTPS_PROXY=http://127.0.0.1:7890 \
+HTTP_PROXY=http://127.0.0.1:7890 \
+ALL_PROXY=socks5://127.0.0.1:7890 \
+git push origin main
+```
+
+本次公开仓库和 Pages 的最终同步就是按这个方式完成的。
+
 ## 当前最值得优先卖的服务
 
 1. 自动化脚本代做

@@ -9,6 +9,7 @@ SCRIPT = ROOT / "tools" / "issue_to_proposal.sh"
 ISSUE_FIXTURE = ROOT / "tests" / "fixtures" / "sample_issue.md"
 FAKE_PROPOSAL = ROOT / "tests" / "fixtures" / "fake_proposal_lab.sh"
 OUTDIR = ROOT / "tmp_pipeline_output"
+FAKE_GH = ROOT / "tests" / "fixtures" / "fake_gh.sh"
 
 
 def require(condition: bool, message: str) -> None:
@@ -19,6 +20,7 @@ def require(condition: bool, message: str) -> None:
 def main() -> int:
     require(SCRIPT.exists(), "missing tools/issue_to_proposal.sh")
     FAKE_PROPOSAL.chmod(FAKE_PROPOSAL.stat().st_mode | stat.S_IXUSR)
+    FAKE_GH.chmod(FAKE_GH.stat().st_mode | stat.S_IXUSR)
 
     if OUTDIR.exists():
         shutil.rmtree(OUTDIR)

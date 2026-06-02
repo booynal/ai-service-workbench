@@ -14,9 +14,11 @@ def main() -> int:
     service_form = ROOT / ".github" / "ISSUE_TEMPLATE" / "service-request.yml"
     config_file = ROOT / ".github" / "ISSUE_TEMPLATE" / "config.yml"
     public_page = ROOT / "docs" / "index.html"
+    import_script = ROOT / "tools" / "issue_to_brief.py"
 
     require(service_form.exists(), "missing .github/ISSUE_TEMPLATE/service-request.yml")
     require(config_file.exists(), "missing .github/ISSUE_TEMPLATE/config.yml")
+    require(import_script.exists(), "missing tools/issue_to_brief.py")
 
     form_text = service_form.read_text()
     require("name:" in form_text, "service request form missing name")

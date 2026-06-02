@@ -35,6 +35,7 @@
 29. 一键开始今日触达：`tools/start_today.py`
 30. 今日动作打印器：`tools/today_actions.py`
 31. 发前检查：`tools/preflight_check.py`
+32. GitHub 外联发送器（默认预览）：`tools/send_github_outreach.py`
 
 示例：
 

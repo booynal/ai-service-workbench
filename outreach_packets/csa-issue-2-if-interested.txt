@@ -1,0 +1,15 @@
+Hi,
+
+Happy to keep it short and practical.
+
+My rough view is:
+1. define one first workflow only
+2. map input -> processing -> output
+3. build a small first version before expanding scope
+
+If useful, I can send a short outline covering:
+1. likely first deliverable
+2. main missing information
+3. a realistic first implementation path
+
+If you prefer, I can also keep it to a lightweight scope note instead of a full proposal.

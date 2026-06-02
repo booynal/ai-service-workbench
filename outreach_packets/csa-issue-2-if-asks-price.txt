@@ -1,0 +1,14 @@
+Hi,
+
+At this stage I would usually avoid pretending the range is precise before the workflow boundary is clear, but for a lightweight first version I would typically think in terms of:
+
+1. a scoped first-pass workflow setup
+2. one concrete deliverable path
+3. a short handoff / implementation note
+
+The real range mostly depends on:
+1. current stack and environment
+2. how much is already in place
+3. whether the first version is just a design path or an actual working setup
+
+If you want, I can first send a compact scope note so the estimate is tied to something concrete.

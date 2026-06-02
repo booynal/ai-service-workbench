@@ -5,27 +5,28 @@
 ## 先看哪里
 
 1. 总报告：`赚钱方案报告-2026-06-03.md`
-2. 服务清单：`服务套餐清单.md`
-3. 发渠道文案：`渠道发布文案.md`
-4. 首周动作：`首周落地清单.md`
-5. 客户需求模板：`client_brief_template.md`
-6. 渠道执行矩阵：`渠道执行矩阵-2026-06-03.md`
-7. Fiverr Gig 草稿：`Fiverr-Gig-草稿.md`
-8. Upwork Profile 与 Proposal 草稿：`Upwork-Profile-和-Proposal-草稿.md`
-9. 英文外联模板：`英文外联模板.md`
-10. 主动外联候选清单：`主动外联候选清单-2026-06-03.md`
-11. 定制英文外联草稿：`定制英文外联草稿-2026-06-03.md`
-12. 真实机会雷达：`真实机会雷达-2026-06-03.md`
-13. 外联消息生成器：`tools/generate_outreach_message.py`
-14. 明日首发执行单：`明日首发执行单-2026-06-03.md`
-15. 触达计划：`触达计划.csv`
-16. 触达日志模板：`触达日志模板.csv`
-17. 现成外联包目录：`outreach_packets/`
-18. 外联包索引器：`tools/prepare_outreach_packet.py`
-19. 外联回复分支模板：`外联回复分支模板-英文.md`
-20. 中文外联包说明：`中文外联包-说明.md`
-21. 触达记录追加工具：`tools/log_outreach_entry.py`
-22. 外联 runbook 渲染器：`tools/render_outreach_runbook.py`
+2. 开始这里：`开始这里-明日执行版.md`
+3. 服务清单：`服务套餐清单.md`
+4. 发渠道文案：`渠道发布文案.md`
+5. 首周动作：`首周落地清单.md`
+6. 客户需求模板：`client_brief_template.md`
+7. 渠道执行矩阵：`渠道执行矩阵-2026-06-03.md`
+8. Fiverr Gig 草稿：`Fiverr-Gig-草稿.md`
+9. Upwork Profile 与 Proposal 草稿：`Upwork-Profile-和-Proposal-草稿.md`
+10. 英文外联模板：`英文外联模板.md`
+11. 主动外联候选清单：`主动外联候选清单-2026-06-03.md`
+12. 定制英文外联草稿：`定制英文外联草稿-2026-06-03.md`
+13. 真实机会雷达：`真实机会雷达-2026-06-03.md`
+14. 外联消息生成器：`tools/generate_outreach_message.py`
+15. 明日首发执行单：`明日首发执行单-2026-06-03.md`
+16. 触达计划：`触达计划.csv`
+17. 触达日志模板：`触达日志模板.csv`
+18. 现成外联包目录：`outreach_packets/`
+19. 外联包索引器：`tools/prepare_outreach_packet.py`
+20. 外联回复分支模板：`外联回复分支模板-英文.md`
+21. 中文外联包说明：`中文外联包-说明.md`
+22. 触达记录追加工具：`tools/log_outreach_entry.py`
+23. 外联 runbook 渲染器：`tools/render_outreach_runbook.py`
 
 示例：
 

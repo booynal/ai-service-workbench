@@ -21,12 +21,17 @@
 1. 公开仓库：`https://github.com/booynal/ai-service-workbench`
 2. GitHub Pages 站点：`https://booynal.github.io/ai-service-workbench/`
 3. 当前状态：仓库已创建并推送成功，Pages 已创建并已验证可访问
+4. GitHub issue 接单入口：`https://github.com/booynal/ai-service-workbench/issues/new/choose`
 
 ## 提案生成工具
 
 脚本：
 
 `tools/proposal_lab.sh`
+
+配套的 GitHub issue 导入脚本：
+
+`tools/issue_to_brief.py`
 
 用法：
 
@@ -42,10 +47,32 @@
 
 1. 一份可直接发客户的中文提案 Markdown
 
+## GitHub issue 到提案的本地流程
+
+1. 从 GitHub issue 表单拿到正文内容
+2. 保存成一个 Markdown 文件
+3. 用下面的命令转成本地 brief：
+
+```bash
+python3 tools/issue_to_brief.py path/to/issue.md report_assets/imported_brief.md
+```
+
+4. 再生成提案：
+
+```bash
+./tools/proposal_lab.sh report_assets/imported_brief.md report_assets/imported_proposal.md
+```
+
+这条链路已经在当前目录跑通过一次真实样例：
+
+`tests/fixtures/sample_issue.md -> report_assets/imported_brief.md -> report_assets/imported_proposal.md`
+
 ## 当前已有样例
 
 1. 烟雾验证：`report_assets/codex_smoke.txt`
 2. 提案样例：`report_assets/sample_proposal.md`
+3. GitHub issue 导入后的 brief：`report_assets/imported_brief.md`
+4. GitHub issue 导入后的提案：`report_assets/imported_proposal.md`
 
 ## 推荐你下一步怎么用
 
@@ -68,6 +95,12 @@ git push origin main
 ```
 
 本次公开仓库和 Pages 的最终同步就是按这个方式完成的。
+
+## 当前可用的接单入口
+
+如果有人已经到了仓库，可以直接通过 GitHub issue 表单提交需求：
+
+`https://github.com/booynal/ai-service-workbench/issues/new/choose`
 
 ## 当前最值得优先卖的服务
 

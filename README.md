@@ -32,6 +32,13 @@ python3 tools/prepare_outreach_packet.py wechat-group
 python3 tools/prepare_outreach_packet.py dm-direct
 ```
 
+它现在不只是告诉你先发哪份，还会一起打印：
+
+1. 对方有兴趣后怎么接
+2. 对方问价格怎么接
+3. 48 小时未回复怎么跟
+4. 发完后怎么记一笔
+
 ## 已验证可用的本地能力
 
 1. 本机 `codex` 已登录，可非交互执行

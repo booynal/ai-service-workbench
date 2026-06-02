@@ -28,6 +28,16 @@ def main(argv: list[str]) -> int:
     print(f"Message file: {item['message']}")
     if item.get("proposal"):
         print(f"Proposal file: {item['proposal']}")
+    if item.get("if_interested"):
+        print(f"If interested: {item['if_interested']}")
+    if item.get("if_asks_price"):
+        print(f"If asks price: {item['if_asks_price']}")
+    if item.get("followup_48h"):
+        print(f"48h follow-up: {item['followup_48h']}")
+    print(
+        "Log command: "
+        f'python3 tools/log_outreach_entry.py 触达记录模板.csv 2026-06-03 unknown "{candidate}" "{item["message"]}" sent "wait reply" "manual send"'
+    )
     return 0
 
 

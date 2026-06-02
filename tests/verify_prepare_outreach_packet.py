@@ -28,6 +28,9 @@ def main() -> int:
     require("outreach_packets/csa-issue-2-message.txt" in text, "output should include message path")
     require("outreach_packets/csa-issue-2-proposal.md" in text, "output should include proposal path")
     require("https://github.com/faisalabdullah-commits/csa/issues/2" in text, "output should include target URL")
+    require("outreach_packets/csa-issue-2-if-interested.txt" in text, "output should include interested follow-up path")
+    require("outreach_packets/csa-issue-2-if-asks-price.txt" in text, "output should include pricing follow-up path")
+    require("tools/log_outreach_entry.py" in text, "output should include log command guidance")
 
     proc_cn = subprocess.run(
         ["python3", str(SCRIPT), "wechat-group"],
@@ -39,6 +42,8 @@ def main() -> int:
     text_cn = proc_cn.stdout
     require("wechat-group" in text_cn, "output should include chinese packet key")
     require("cn_outreach_packets/微信群首发短文案.txt" in text_cn, "output should include chinese message path")
+    require("cn_outreach_packets/对方有兴趣后怎么接.txt" in text_cn, "output should include chinese interested follow-up")
+    require("cn_outreach_packets/对方先问价格怎么接.txt" in text_cn, "output should include chinese price follow-up")
 
     return 0
 

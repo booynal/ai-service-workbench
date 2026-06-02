@@ -3,6 +3,9 @@
     "target_url": "https://github.com/faisalabdullah-commits/csa/issues/2",
     "message": "outreach_packets/csa-issue-2-message.txt",
     "proposal": "outreach_packets/csa-issue-2-proposal.md",
+    "if_interested": "outreach_packets/csa-issue-2-if-interested.txt",
+    "if_asks_price": "outreach_packets/csa-issue-2-if-asks-price.txt",
+    "followup_48h": "outreach_packets/csa-issue-2-followup-48h.txt",
     "priority": "highest"
   },
   "agile-issue-10": {
@@ -14,12 +17,18 @@
   "wechat-group": {
     "target_url": "wechat-group",
     "message": "cn_outreach_packets/微信群首发短文案.txt",
+    "if_interested": "cn_outreach_packets/对方有兴趣后怎么接.txt",
+    "if_asks_price": "cn_outreach_packets/对方先问价格怎么接.txt",
+    "followup_48h": "cn_outreach_packets/48小时未回复跟进.txt",
     "proposal": "",
     "priority": "highest"
   },
   "dm-direct": {
     "target_url": "direct-message",
     "message": "cn_outreach_packets/一对一私聊首发.txt",
+    "if_interested": "cn_outreach_packets/对方有兴趣后怎么接.txt",
+    "if_asks_price": "cn_outreach_packets/对方先问价格怎么接.txt",
+    "followup_48h": "cn_outreach_packets/48小时未回复跟进.txt",
     "proposal": "",
     "priority": "highest"
   }

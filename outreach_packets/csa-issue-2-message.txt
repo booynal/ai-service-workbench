@@ -1,0 +1,11 @@
+Hi,
+
+I came across your issue and it looks like a real ai workflow setup problem rather than a routine backlog note.
+
+My quick read is that the core issue is customer needs assistance configuring automation workflows and does not currently have the workflow setup completed.
+I usually help with small first-pass automation or workflow setups, so if useful, I can share a short and concise view of:
+1. what the likely first deliverable is
+2. what information is still missing
+3. what a practical first version might look like
+
+No pressure — just offering a lightweight outside perspective if that would be useful.

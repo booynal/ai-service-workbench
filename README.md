@@ -23,6 +23,7 @@
 16. 外联回复分支模板：`外联回复分支模板-英文.md`
 17. 中文外联包说明：`中文外联包-说明.md`
 18. 触达记录追加工具：`tools/log_outreach_entry.py`
+19. 外联 runbook 渲染器：`tools/render_outreach_runbook.py`
 
 示例：
 
@@ -38,6 +39,13 @@ python3 tools/prepare_outreach_packet.py dm-direct
 2. 对方问价格怎么接
 3. 48 小时未回复怎么跟
 4. 发完后怎么记一笔
+
+如果你想直接得到一页可照着执行的 runbook：
+
+```bash
+python3 tools/render_outreach_runbook.py wechat-group tmp_runbooks/wechat.md
+python3 tools/render_outreach_runbook.py csa-issue-2 tmp_runbooks/csa.md
+```
 
 ## 已验证可用的本地能力
 

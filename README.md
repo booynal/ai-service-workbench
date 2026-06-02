@@ -14,22 +14,23 @@
 8. 渠道执行矩阵：`渠道执行矩阵-2026-06-03.md`
 9. Fiverr Gig 草稿：`Fiverr-Gig-草稿.md`
 10. Upwork Profile 与 Proposal 草稿：`Upwork-Profile-和-Proposal-草稿.md`
-11. 英文外联模板：`英文外联模板.md`
-12. 主动外联候选清单：`主动外联候选清单-2026-06-03.md`
-13. 定制英文外联草稿：`定制英文外联草稿-2026-06-03.md`
-14. 真实机会雷达：`真实机会雷达-2026-06-03.md`
-15. 外联消息生成器：`tools/generate_outreach_message.py`
-16. 明日首发执行单：`明日首发执行单-2026-06-03.md`
-17. 触达计划：`触达计划.csv`
-18. 触达日志模板：`触达日志模板.csv`
-19. 现成外联包目录：`outreach_packets/`
-20. 外联包索引器：`tools/prepare_outreach_packet.py`
-21. 外联回复分支模板：`外联回复分支模板-英文.md`
-22. 中文外联包说明：`中文外联包-说明.md`
-23. 触达记录追加工具：`tools/log_outreach_entry.py`
-24. 外联 runbook 渲染器：`tools/render_outreach_runbook.py`
-25. 微信分享素材：`share_assets/zh-landing-qr.png`、`share_assets/wechat-share-card.png`
-26. 中文落地页：`docs/zh.html`
+11. Upwork 机会雷达：`Upwork-机会雷达-2026-06-03.md`
+12. 英文外联模板：`英文外联模板.md`
+13. 主动外联候选清单：`主动外联候选清单-2026-06-03.md`
+14. 定制英文外联草稿：`定制英文外联草稿-2026-06-03.md`
+15. 真实机会雷达：`真实机会雷达-2026-06-03.md`
+16. 外联消息生成器：`tools/generate_outreach_message.py`
+17. 明日首发执行单：`明日首发执行单-2026-06-03.md`
+18. 触达计划：`触达计划.csv`
+19. 触达日志模板：`触达日志模板.csv`
+20. 现成外联包目录：`outreach_packets/`
+21. 外联包索引器：`tools/prepare_outreach_packet.py`
+22. 外联回复分支模板：`外联回复分支模板-英文.md`
+23. 中文外联包说明：`中文外联包-说明.md`
+24. 触达记录追加工具：`tools/log_outreach_entry.py`
+25. 外联 runbook 渲染器：`tools/render_outreach_runbook.py`
+26. 微信分享素材：`share_assets/zh-landing-qr.png`、`share_assets/wechat-share-card.png`
+27. 中文落地页：`docs/zh.html`
 
 示例：
 

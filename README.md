@@ -32,6 +32,7 @@
 26. 微信分享素材：`share_assets/zh-landing-qr.png`、`share_assets/wechat-share-card.png`
 27. 中文落地页：`docs/zh.html`
 28. 下一条触达建议器：`tools/next_outreach.py`
+29. 一键开始今日触达：`tools/start_today.py`
 29. 今日动作打印器：`tools/today_actions.py`
 
 示例：

@@ -65,6 +65,23 @@ python3 tools/issue_to_brief.py tmp_issue.md report_assets/imported_brief.md
 ./tools/issue_to_proposal.sh https://github.com/booynal/ai-service-workbench/issues/123 output_dir
 ```
 
+## 如果希望直接把提案回帖到 issue
+
+```bash
+./tools/issue_to_proposal_and_comment.sh 123 output_dir
+```
+
+这条命令会：
+
+1. 拉取 issue
+2. 生成 brief
+3. 生成 proposal
+4. 把 proposal 作为评论回帖到该 issue
+
+这条自动回帖链路已经对公开仓库里的真实 issue 跑通过一次：
+
+`issue #2 -> report_assets/live_comment_run/ -> issue comment`
+
 输出目录中会得到：
 
 1. `issue.md`

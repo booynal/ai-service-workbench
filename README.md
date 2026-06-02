@@ -37,6 +37,10 @@
 
 `tools/issue_to_proposal.sh`
 
+自动回帖脚本：
+
+`tools/issue_to_proposal_and_comment.sh`
+
 用法：
 
 ```bash
@@ -85,6 +89,16 @@ python3 tools/issue_to_brief.py path/to/issue.md report_assets/imported_brief.md
 ./tools/issue_to_proposal.sh https://github.com/booynal/ai-service-workbench/issues/123 output_dir
 ```
 
+如果希望生成后直接评论回 issue：
+
+```bash
+./tools/issue_to_proposal_and_comment.sh 123 output_dir
+```
+
+这条自动回帖链路也已经完成一次真实 GitHub issue 验证：
+
+`issue #2 -> report_assets/live_comment_run/ -> comment back to issue`
+
 这条一键链路也已经完成了一次真实验证：
 
 `tests/fixtures/sample_issue.md -> report_assets/pipeline_run/issue.md -> report_assets/pipeline_run/brief.md -> report_assets/pipeline_run/proposal.md`
@@ -105,6 +119,7 @@ python3 tools/issue_to_brief.py path/to/issue.md report_assets/imported_brief.md
 4. GitHub issue 导入后的提案：`report_assets/imported_proposal.md`
 5. 一键流水线输出目录：`report_assets/pipeline_run/`
 6. 真实 GitHub issue 输出目录：`report_assets/live_issue_run/`
+7. 真实自动回帖输出目录：`report_assets/live_comment_run/`
 
 ## 推荐你下一步怎么用
 

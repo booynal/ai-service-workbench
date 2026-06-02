@@ -3,6 +3,7 @@ description: Submit a project brief for automation, reporting, or AI workflow wo
 title: "[Service Request] "
 labels:
   - inbound-lead
+  - client-request
 body:
   - type: dropdown
     id: service_type

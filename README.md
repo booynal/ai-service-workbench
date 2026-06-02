@@ -27,6 +27,7 @@
 21. 中文外联包说明：`中文外联包-说明.md`
 22. 触达记录追加工具：`tools/log_outreach_entry.py`
 23. 外联 runbook 渲染器：`tools/render_outreach_runbook.py`
+24. 微信分享素材：`share_assets/zh-landing-qr.png`、`share_assets/wechat-share-card.png`
 24. 中文落地页：`docs/zh.html`
 
 示例：

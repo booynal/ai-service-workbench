@@ -98,6 +98,14 @@ python3 tools/issue_to_brief.py tmp_issue.md report_assets/imported_brief.md
 2. 跳过已经有 `proposal-sent` 的项目
 3. 对剩余 issue 执行自动提案和回帖流程
 
+## 如果希望看当前线索池报表
+
+```bash
+python3 tools/pipeline_report.py report_assets/live_pipeline_report.md
+```
+
+这会输出一个最小 CRM 视角的 Markdown 报表。
+
 输出目录中会得到：
 
 1. `issue.md`

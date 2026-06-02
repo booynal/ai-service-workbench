@@ -45,6 +45,10 @@
 
 `tools/process_open_leads.sh`
 
+线索报表脚本：
+
+`tools/pipeline_report.py`
+
 用法：
 
 ```bash
@@ -105,6 +109,12 @@ python3 tools/issue_to_brief.py path/to/issue.md report_assets/imported_brief.md
 ./tools/process_open_leads.sh output_root_dir
 ```
 
+如果希望生成当前线索池的 Markdown 报表：
+
+```bash
+python3 tools/pipeline_report.py report_assets/live_pipeline_report.md
+```
+
 这条自动回帖链路也已经完成一次真实 GitHub issue 验证：
 
 `issue #2 -> report_assets/live_comment_run/ -> comment back to issue`
@@ -135,6 +145,7 @@ python3 tools/issue_to_brief.py path/to/issue.md report_assets/imported_brief.md
 6. 真实 GitHub issue 输出目录：`report_assets/live_issue_run/`
 7. 真实自动回帖输出目录：`report_assets/live_comment_run/`
 8. 自动打标签输出目录：`report_assets/live_label_run/`
+9. 线索报表：`report_assets/live_pipeline_report.md`
 
 ## 推荐你下一步怎么用
 

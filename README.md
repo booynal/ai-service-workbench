@@ -57,6 +57,14 @@ launchd 配置模板：
 
 `launchd/com.booynal.ai-service-workbench.plist`
 
+安装脚本：
+
+`tools/install_lead_engine.sh`
+
+移除脚本：
+
+`tools/remove_lead_engine.sh`
+
 用法：
 
 ```bash
@@ -130,6 +138,25 @@ python3 tools/pipeline_report.py report_assets/live_pipeline_report.md
 ```
 
 当前仓库只提供 launchd 配置模板，不自动安装到系统。
+
+如果后续你想自己开启：
+
+```bash
+./tools/install_lead_engine.sh
+```
+
+如果想移除：
+
+```bash
+./tools/remove_lead_engine.sh
+```
+
+如果只想演练、不真正加载 launchctl：
+
+```bash
+DRY_RUN=1 ./tools/install_lead_engine.sh
+DRY_RUN=1 ./tools/remove_lead_engine.sh
+```
 
 这条自动回帖链路也已经完成一次真实 GitHub issue 验证：
 

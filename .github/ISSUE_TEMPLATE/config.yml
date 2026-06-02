@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Read the public workbench page
+    url: https://booynal.github.io/ai-service-workbench/
+    about: Review the current services, sample proposal, and workflow before opening a request.

@@ -1,0 +1,73 @@
+name: Service Request
+description: Submit a project brief for automation, reporting, or AI workflow work.
+title: "[Service Request] "
+labels:
+  - inbound-lead
+body:
+  - type: dropdown
+    id: service_type
+    attributes:
+      label: Service type
+      description: Pick the closest starting point.
+      options:
+        - Automation script
+        - Document/report delivery
+        - AI workflow setup
+        - Developer support
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem do you want solved?
+      description: Describe the current pain point and what is taking time.
+      placeholder: We process 10 messy meeting notes every day and need one consistent report.
+    validations:
+      required: true
+  - type: textarea
+    id: desired_output
+    attributes:
+      label: What final output do you need?
+      description: Script, report, table, Markdown, PDF, or something else.
+      placeholder: One Markdown summary and one CSV export.
+    validations:
+      required: true
+  - type: textarea
+    id: materials
+    attributes:
+      label: What materials already exist?
+      description: Files, screenshots, spreadsheets, links, docs, or notes.
+      placeholder: 3 docx files, 5 copied chat logs, one expected output sample.
+    validations:
+      required: true
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Delivery window
+      options:
+        - Within 24 hours
+        - Within 3 days
+        - Within 1 week
+        - Flexible
+    validations:
+      required: true
+  - type: dropdown
+    id: budget
+    attributes:
+      label: Budget range
+      options:
+        - Under 500 CNY
+        - 500-1000 CNY
+        - 1000-3000 CNY
+        - 3000+ CNY
+        - Need recommendation
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Hard constraints or things that must not be touched
+      description: Security, privacy, platform restrictions, or forbidden tools.
+      placeholder: No external API, no cloud deployment, local-only processing.
+    validations:
+      required: false

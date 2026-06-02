@@ -13,6 +13,8 @@
 7. Fiverr Gig 草稿：`Fiverr-Gig-草稿.md`
 8. Upwork Profile 与 Proposal 草稿：`Upwork-Profile-和-Proposal-草稿.md`
 9. 英文外联模板：`英文外联模板.md`
+10. 主动外联候选清单：`主动外联候选清单-2026-06-03.md`
+11. 定制英文外联草稿：`定制英文外联草稿-2026-06-03.md`
 
 ## 已验证可用的本地能力
 

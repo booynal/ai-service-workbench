@@ -29,6 +29,8 @@
 
 `tmp_issue.md`
 
+如果 issue 已经在公开仓库里，也可以直接跳过这一步，后面直接传 issue 编号。
+
 ## 第三步：转成本地 brief
 
 ```bash
@@ -51,6 +53,18 @@ python3 tools/issue_to_brief.py tmp_issue.md report_assets/imported_brief.md
 ./tools/issue_to_proposal.sh tmp_issue.md output_dir
 ```
 
+或者直接用仓库里的 issue 编号：
+
+```bash
+./tools/issue_to_proposal.sh 123 output_dir
+```
+
+如果拿到的是 issue 链接，也可以直接传 URL：
+
+```bash
+./tools/issue_to_proposal.sh https://github.com/booynal/ai-service-workbench/issues/123 output_dir
+```
+
 输出目录中会得到：
 
 1. `issue.md`
@@ -60,6 +74,10 @@ python3 tools/issue_to_brief.py tmp_issue.md report_assets/imported_brief.md
 这条一键命令已经在当前目录真实跑通过一次：
 
 `tests/fixtures/sample_issue.md -> report_assets/pipeline_run/`
+
+而且已经对公开仓库里的真实 GitHub issue 跑通过一次：
+
+`issue #1 -> report_assets/live_issue_run/`
 
 结果文件：
 

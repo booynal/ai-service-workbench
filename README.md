@@ -73,9 +73,25 @@ python3 tools/issue_to_brief.py path/to/issue.md report_assets/imported_brief.md
 ./tools/issue_to_proposal.sh path/to/issue.md output_dir
 ```
 
+如果 issue 已经在 GitHub 仓库里，也可以直接传 issue 编号：
+
+```bash
+./tools/issue_to_proposal.sh 123 output_dir
+```
+
+也可以传 GitHub issue URL，只要 `gh issue view` 能识别：
+
+```bash
+./tools/issue_to_proposal.sh https://github.com/booynal/ai-service-workbench/issues/123 output_dir
+```
+
 这条一键链路也已经完成了一次真实验证：
 
 `tests/fixtures/sample_issue.md -> report_assets/pipeline_run/issue.md -> report_assets/pipeline_run/brief.md -> report_assets/pipeline_run/proposal.md`
+
+另外已经完成一次真实 GitHub issue 验证：
+
+`https://github.com/booynal/ai-service-workbench/issues/1 -> report_assets/live_issue_run/`
 
 这条链路已经在当前目录跑通过一次真实样例：
 
@@ -88,6 +104,7 @@ python3 tools/issue_to_brief.py path/to/issue.md report_assets/imported_brief.md
 3. GitHub issue 导入后的 brief：`report_assets/imported_brief.md`
 4. GitHub issue 导入后的提案：`report_assets/imported_proposal.md`
 5. 一键流水线输出目录：`report_assets/pipeline_run/`
+6. 真实 GitHub issue 输出目录：`report_assets/live_issue_run/`
 
 ## 推荐你下一步怎么用
 

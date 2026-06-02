@@ -2,17 +2,12 @@
 set -euo pipefail
 
 if [ "$#" -lt 2 ]; then
-  echo "Usage: $0 <issue-file> <output-dir>" >&2
+  echo "Usage: $0 <issue-file-or-issue-id> <output-dir>" >&2
   exit 1
 fi
 
-issue_file="$1"
+issue_input="$1"
 output_dir="$2"
-
-if [ ! -f "$issue_file" ]; then
-  echo "Issue file not found: $issue_file" >&2
-  exit 1
-fi
 
 mkdir -p "$output_dir"
 
@@ -20,7 +15,12 @@ issue_copy="$output_dir/issue.md"
 brief_file="$output_dir/brief.md"
 proposal_file="$output_dir/proposal.md"
 
-cp "$issue_file" "$issue_copy"
+if [ -f "$issue_input" ]; then
+  cp "$issue_input" "$issue_copy"
+else
+  gh_cmd="${GH_CMD:-gh}"
+  "$gh_cmd" issue view "$issue_input" --repo booynal/ai-service-workbench --json body --jq .body >"$issue_copy"
+fi
 
 python3 tools/issue_to_brief.py "$issue_copy" "$brief_file"
 

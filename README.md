@@ -33,6 +33,10 @@
 
 `tools/issue_to_brief.py`
 
+一键流水线脚本：
+
+`tools/issue_to_proposal.sh`
+
 用法：
 
 ```bash
@@ -63,6 +67,16 @@ python3 tools/issue_to_brief.py path/to/issue.md report_assets/imported_brief.md
 ./tools/proposal_lab.sh report_assets/imported_brief.md report_assets/imported_proposal.md
 ```
 
+如果希望从 issue 文本直接一条命令走完整链路：
+
+```bash
+./tools/issue_to_proposal.sh path/to/issue.md output_dir
+```
+
+这条一键链路也已经完成了一次真实验证：
+
+`tests/fixtures/sample_issue.md -> report_assets/pipeline_run/issue.md -> report_assets/pipeline_run/brief.md -> report_assets/pipeline_run/proposal.md`
+
 这条链路已经在当前目录跑通过一次真实样例：
 
 `tests/fixtures/sample_issue.md -> report_assets/imported_brief.md -> report_assets/imported_proposal.md`
@@ -73,6 +87,7 @@ python3 tools/issue_to_brief.py path/to/issue.md report_assets/imported_brief.md
 2. 提案样例：`report_assets/sample_proposal.md`
 3. GitHub issue 导入后的 brief：`report_assets/imported_brief.md`
 4. GitHub issue 导入后的提案：`report_assets/imported_proposal.md`
+5. 一键流水线输出目录：`report_assets/pipeline_run/`
 
 ## 推荐你下一步怎么用
 

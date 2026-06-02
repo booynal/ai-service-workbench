@@ -45,6 +45,22 @@ python3 tools/issue_to_brief.py tmp_issue.md report_assets/imported_brief.md
 ./tools/proposal_lab.sh report_assets/imported_brief.md report_assets/imported_proposal.md
 ```
 
+## 更快的方式：一条命令直接走完整链路
+
+```bash
+./tools/issue_to_proposal.sh tmp_issue.md output_dir
+```
+
+输出目录中会得到：
+
+1. `issue.md`
+2. `brief.md`
+3. `proposal.md`
+
+这条一键命令已经在当前目录真实跑通过一次：
+
+`tests/fixtures/sample_issue.md -> report_assets/pipeline_run/`
+
 结果文件：
 
 `report_assets/imported_proposal.md`

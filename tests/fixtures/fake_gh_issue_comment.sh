@@ -28,5 +28,26 @@ if [ "$1" = "issue" ] && [ "$2" = "comment" ]; then
   exit 0
 fi
 
+if [ "$1" = "issue" ] && [ "$2" = "edit" ]; then
+  issue_ref="$3"
+  shift 3
+  label=""
+  while [ "$#" -gt 0 ]; do
+    case "$1" in
+      --add-label)
+        label="$2"
+        shift 2
+        ;;
+      *)
+        shift 1
+        ;;
+    esac
+  done
+  mkdir -p tmp_comment_capture
+  printf '%s\n' "$label" > "tmp_comment_capture/${issue_ref}.label"
+  echo "edited ${issue_ref}"
+  exit 0
+fi
+
 echo "unexpected gh invocation: $*" >&2
 exit 1

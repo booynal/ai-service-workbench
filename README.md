@@ -99,6 +99,10 @@ python3 tools/issue_to_brief.py path/to/issue.md report_assets/imported_brief.md
 
 `issue #2 -> report_assets/live_comment_run/ -> comment back to issue`
 
+自动打标签链路也已完成真实验证：
+
+`issue #3 -> report_assets/live_label_run/ -> comment back + label proposal-sent`
+
 这条一键链路也已经完成了一次真实验证：
 
 `tests/fixtures/sample_issue.md -> report_assets/pipeline_run/issue.md -> report_assets/pipeline_run/brief.md -> report_assets/pipeline_run/proposal.md`
@@ -120,6 +124,7 @@ python3 tools/issue_to_brief.py path/to/issue.md report_assets/imported_brief.md
 5. 一键流水线输出目录：`report_assets/pipeline_run/`
 6. 真实 GitHub issue 输出目录：`report_assets/live_issue_run/`
 7. 真实自动回帖输出目录：`report_assets/live_comment_run/`
+8. 自动打标签输出目录：`report_assets/live_label_run/`
 
 ## 推荐你下一步怎么用
 

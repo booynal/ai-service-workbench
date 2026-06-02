@@ -82,6 +82,10 @@ python3 tools/issue_to_brief.py tmp_issue.md report_assets/imported_brief.md
 
 `issue #2 -> report_assets/live_comment_run/ -> issue comment`
 
+此外还验证了状态推进：
+
+`issue #3 -> report_assets/live_label_run/ -> issue comment + label proposal-sent`
+
 输出目录中会得到：
 
 1. `issue.md`

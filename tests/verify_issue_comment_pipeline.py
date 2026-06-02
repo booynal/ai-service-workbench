@@ -43,9 +43,12 @@ def main() -> int:
 
     proposal_file = OUTDIR / "proposal.md"
     comment_file = CAPTURE_DIR / "9.md"
+    label_file = CAPTURE_DIR / "9.label"
     require(proposal_file.exists(), "proposal file missing")
     require(comment_file.exists(), "issue comment body should be captured")
+    require(label_file.exists(), "issue label operation should be captured")
     require("# Fake Proposal" in comment_file.read_text(), "comment should contain proposal body")
+    require(label_file.read_text().strip() == "proposal-sent", "issue should be marked proposal-sent")
 
     shutil.rmtree(OUTDIR)
     shutil.rmtree(CAPTURE_DIR)

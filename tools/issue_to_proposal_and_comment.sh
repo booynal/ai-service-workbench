@@ -19,5 +19,6 @@ fi
 
 gh_cmd="${GH_CMD:-gh}"
 "$gh_cmd" issue comment "$issue_ref" --repo booynal/ai-service-workbench --body-file "$proposal_file"
+"$gh_cmd" issue edit "$issue_ref" --repo booynal/ai-service-workbench --add-label proposal-sent
 
 echo "Commented proposal back to issue $issue_ref"

@@ -1,0 +1,14 @@
+{
+  "csa-issue-2": {
+    "target_url": "https://github.com/faisalabdullah-commits/csa/issues/2",
+    "message": "outreach_packets/csa-issue-2-message.txt",
+    "proposal": "outreach_packets/csa-issue-2-proposal.md",
+    "priority": "highest"
+  },
+  "agile-issue-10": {
+    "target_url": "https://github.com/G-Gonski/agile-final-project/issues/10",
+    "message": "outreach_packets/agile-issue-10-message.txt",
+    "proposal": "outreach_packets/agile-issue-10-proposal.md",
+    "priority": "secondary"
+  }
+}

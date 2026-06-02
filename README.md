@@ -19,6 +19,7 @@
 12. 明日首发执行单：`明日首发执行单-2026-06-03.md`
 13. 触达记录模板：`触达记录模板.csv`
 14. 现成外联包目录：`outreach_packets/`
+15. 外联包索引器：`tools/prepare_outreach_packet.py`
 
 ## 已验证可用的本地能力
 

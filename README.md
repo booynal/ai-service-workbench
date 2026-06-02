@@ -16,6 +16,12 @@
 2. 本机 `claude` 已登录
 3. 已用 `codex exec` 成功生成提案样例
 
+## 已落地的公开入口
+
+1. 公开仓库：`https://github.com/booynal/ai-service-workbench`
+2. GitHub Pages 站点：`https://booynal.github.io/ai-service-workbench/`
+3. 当前状态：仓库已创建并推送成功，Pages 已创建，等待构建完成后即可稳定访问
+
 ## 提案生成工具
 
 脚本：

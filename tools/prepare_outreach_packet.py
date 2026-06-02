@@ -36,7 +36,7 @@ def main(argv: list[str]) -> int:
         print(f"48h follow-up: {item['followup_48h']}")
     print(
         "Log command: "
-        f'python3 tools/log_outreach_entry.py 触达记录模板.csv 2026-06-03 unknown "{candidate}" "{item["message"]}" sent "wait reply" "manual send"'
+        f'python3 tools/log_outreach_entry.py 触达日志模板.csv 2026-06-03 unknown "{candidate}" "{item["message"]}" sent "wait reply" "manual send"'
     )
     return 0
 

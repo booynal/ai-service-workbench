@@ -46,6 +46,10 @@
 
 `tools/process_open_leads.sh`
 
+外部线索发现脚本：
+
+`tools/external_lead_report.sh`
+
 线索报表脚本：
 
 `tools/pipeline_report.py`
@@ -124,6 +128,12 @@ python3 tools/issue_to_brief.py path/to/issue.md report_assets/imported_brief.md
 
 ```bash
 ./tools/process_open_leads.sh output_root_dir
+```
+
+如果希望搜索 GitHub 公共 issue 作为外部候选线索：
+
+```bash
+./tools/external_lead_report.sh "automation script" output_dir
 ```
 
 如果希望生成当前线索池的 Markdown 报表：

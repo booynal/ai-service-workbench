@@ -20,7 +20,7 @@
 
 1. 公开仓库：`https://github.com/booynal/ai-service-workbench`
 2. GitHub Pages 站点：`https://booynal.github.io/ai-service-workbench/`
-3. 当前状态：仓库已创建并推送成功，Pages 已创建，等待构建完成后即可稳定访问
+3. 当前状态：仓库已创建并推送成功，Pages 已创建并已验证可访问
 
 ## 提案生成工具
 

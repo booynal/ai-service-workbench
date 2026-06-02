@@ -7,6 +7,6 @@
 适合那种“重复但烦、自己做很耗时间”的活。
 
 我已经把这套东西整理成了一个公开工作台，可以直接看样例和入口：
-https://booynal.github.io/ai-service-workbench/
+https://booynal.github.io/ai-service-workbench/zh.html
 
 如果你手头刚好有这类需求，可以直接把需求发我，我先给你一版方案和建议范围。

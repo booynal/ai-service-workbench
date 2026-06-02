@@ -7,4 +7,4 @@
 如果你现在手头有那种“重复、耗时间、但又值得自动化”的活，可以直接丢我一份需求，我先帮你看能不能做、适合怎么做。
 
 我这边已经整理了一个公开工作台，里面有样例和入口：
-https://booynal.github.io/ai-service-workbench/
+https://booynal.github.io/ai-service-workbench/zh.html

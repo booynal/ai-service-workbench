@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI 代做服务工作台</title>
+  <meta name="description" content="自动化脚本、资料整理成报告、轻量 AI workflow 搭建。">
+  <style>
+    :root {
+      --bg: #f4f0e8;
+      --paper: #fffaf2;
+      --ink: #182126;
+      --muted: #5f6a6e;
+      --line: #d9cfbd;
+      --accent: #0e7a6d;
+      --shadow: 0 20px 60px rgba(24, 33, 38, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Noto Serif SC", "Songti SC", serif;
+      background:
+        radial-gradient(circle at top left, rgba(212, 91, 53, 0.10), transparent 28%),
+        radial-gradient(circle at top right, rgba(14, 122, 109, 0.10), transparent 24%),
+        linear-gradient(180deg, #f7f1e7 0%, #f1ebe0 100%);
+      color: var(--ink);
+    }
+    .wrap {
+      width: min(980px, calc(100vw - 32px));
+      margin: 0 auto;
+      padding: 32px 0 64px;
+    }
+    .card {
+      background: rgba(255, 250, 242, 0.92);
+      border: 1px solid rgba(217, 207, 189, 0.86);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      padding: 24px;
+    }
+    h1, h2, h3 { margin: 0 0 12px; }
+    p, li { color: var(--muted); line-height: 1.75; }
+    .eyebrow {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(14, 122, 109, 0.10);
+      color: var(--accent);
+      font-size: 13px;
+      letter-spacing: 0.06em;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 16px;
+      border-radius: 999px;
+      border: 1px solid var(--ink);
+      text-decoration: none;
+      color: var(--ink);
+    }
+    .btn.primary {
+      background: var(--ink);
+      color: #f7f1e7;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 20px;
+    }
+    .mini {
+      background: rgba(255, 250, 242, 0.92);
+      border: 1px solid rgba(217, 207, 189, 0.86);
+      border-radius: 20px;
+      padding: 18px;
+    }
+    @media (max-width: 800px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <span class="eyebrow">AI 代做服务 / 可本地交付</span>
+      <h1>自动化脚本、资料整理报告、轻量 AI workflow 搭建</h1>
+      <p>
+        适合那种“重复但烦、自己做很耗时间”的活。当前主打三类交付：
+      </p>
+      <ul>
+        <li>自动化脚本：文件处理、CSV 清洗、批量整理、规则化输出</li>
+        <li>资料整理报告：会议纪要、网页、笔记、资料包整理成结构化结果</li>
+        <li>轻量 AI workflow：把重复出现的内部任务整理成半自动流程</li>
+      </ul>
+      <div class="actions">
+        <a class="btn primary" href="https://github.com/booynal/ai-service-workbench/issues/new/choose">提交需求</a>
+        <a class="btn" href="./quote-estimator.html">估算价格</a>
+        <a class="btn" href="./examples.md">查看样例</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="mini">
+        <h3>适合谁</h3>
+        <p>有重复电脑活、资料很多但结论出不来、内部工作流反复靠人工顶的人。</p>
+      </article>
+      <article class="mini">
+        <h3>怎么开始</h3>
+        <p>把需求发出来，我先给一版范围判断、交付建议、时间预估和建议价格区间。</p>
+      </article>
+      <article class="mini">
+        <h3>怎么沟通</h3>
+        <p>优先先做最小可用版本，不一开始就拉进大项目，先验证值不值得继续扩。</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

@@ -27,6 +27,7 @@
 21. 中文外联包说明：`中文外联包-说明.md`
 22. 触达记录追加工具：`tools/log_outreach_entry.py`
 23. 外联 runbook 渲染器：`tools/render_outreach_runbook.py`
+24. 中文落地页：`docs/zh.html`
 
 示例：
 
@@ -60,8 +61,9 @@ python3 tools/render_outreach_runbook.py csa-issue-2 tmp_runbooks/csa.md
 
 1. 公开仓库：`https://github.com/booynal/ai-service-workbench`
 2. GitHub Pages 站点：`https://booynal.github.io/ai-service-workbench/`
-3. 当前状态：仓库已创建并推送成功，Pages 已创建并已验证可访问
-4. GitHub issue 接单入口：`https://github.com/booynal/ai-service-workbench/issues/new/choose`
+3. 中文落地页：`https://booynal.github.io/ai-service-workbench/zh.html`
+4. 当前状态：仓库已创建并推送成功，Pages 已创建并已验证可访问
+5. GitHub issue 接单入口：`https://github.com/booynal/ai-service-workbench/issues/new/choose`
 
 ## 提案生成工具
 

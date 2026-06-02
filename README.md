@@ -49,6 +49,14 @@
 
 `tools/pipeline_report.py`
 
+本机 lead engine：
+
+`tools/run_lead_engine.sh`
+
+launchd 配置模板：
+
+`launchd/com.booynal.ai-service-workbench.plist`
+
 用法：
 
 ```bash
@@ -114,6 +122,14 @@ python3 tools/issue_to_brief.py path/to/issue.md report_assets/imported_brief.md
 ```bash
 python3 tools/pipeline_report.py report_assets/live_pipeline_report.md
 ```
+
+如果希望一次性执行“处理 open leads + 更新报表”：
+
+```bash
+./tools/run_lead_engine.sh report_assets/engine_run
+```
+
+当前仓库只提供 launchd 配置模板，不自动安装到系统。
 
 这条自动回帖链路也已经完成一次真实 GitHub issue 验证：
 

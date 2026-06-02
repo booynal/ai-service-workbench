@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.booynal.ai-service-workbench</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/ziv/tmp/20260603/tools/run_lead_engine.sh</string>
+    <string>/Users/ziv/tmp/20260603/report_assets/engine_run</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/Users/ziv/tmp/20260603</string>
+  <key>StartInterval</key>
+  <integer>1800</integer>
+  <key>StandardOutPath</key>
+  <string>/Users/ziv/tmp/20260603/report_assets/engine_run/stdout.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/ziv/tmp/20260603/report_assets/engine_run/stderr.log</string>
+</dict>
+</plist>

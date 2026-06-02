@@ -106,6 +106,23 @@ python3 tools/pipeline_report.py report_assets/live_pipeline_report.md
 
 这会输出一个最小 CRM 视角的 Markdown 报表。
 
+## 如果希望把线索处理和报表更新一起跑
+
+```bash
+./tools/run_lead_engine.sh report_assets/engine_run
+```
+
+这条 runner 会：
+
+1. 扫描并处理 open leads
+2. 更新本地 pipeline report
+
+另外已经准备了 launchd 模板：
+
+`launchd/com.booynal.ai-service-workbench.plist`
+
+当前只是模板，不会自动安装或改动系统定时任务。
+
 输出目录中会得到：
 
 1. `issue.md`

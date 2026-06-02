@@ -146,6 +146,9 @@ python3 tools/pipeline_report.py report_assets/live_pipeline_report.md
 7. 真实自动回帖输出目录：`report_assets/live_comment_run/`
 8. 自动打标签输出目录：`report_assets/live_label_run/`
 9. 线索报表：`report_assets/live_pipeline_report.md`
+10. 公开案例页：`docs/examples.md`
+11. 报告型案例：`report_assets/report_service_proposal.md`
+12. 工作流型案例：`report_assets/workflow_service_proposal.md`
 
 ## 推荐你下一步怎么用
 
